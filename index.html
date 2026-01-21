@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Documents - Download Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .document-section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+        }
+        
+        .document-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .document-section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .document-section p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .download-btn.html {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        }
+        
+        .download-btn.html:hover {
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+        }
+        
+        .download-btn.txt {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+        }
+        
+        .download-btn.txt:hover {
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+        }
+        
+        .download-btn.md {
+            background: linear-gradient(135deg, #f39c12 0%, #d68910 100%);
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        }
+        
+        .download-btn.md:hover {
+            box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+        }
+        
+        .icon {
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+        
+        .instructions {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ul {
+            color: #856404;
+            margin-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 8px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666;
+            border-top: 2px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Scientific Documents</h1>
+            <p>Download Center for Research Materials</p>
+        </div>
+        
+        <div class="content">
+            <div class="instructions">
+                <h3>📥 How to Download & Save as PDF:</h3>
+                <ul>
+                    <li><strong>HTML Files:</strong> Click the HTML button → Click "Print/Save as PDF" button → Select "Save as PDF" in print dialog</li>
+                    <li><strong>Markdown Files:</strong> Right-click → "Save Link As" to download the original markdown</li>
+                    <li><strong>Text Files:</strong> Click to view in browser, then File → Save As</li>
+                </ul>
+            </div>
+            
+            <div class="document-section">
+                <h2>📄 Document 1: Manuscript Introduction</h2>
+                <p><strong>Title:</strong> The Role of Selenadiazole Derivatives with Imino and Sulphone Functional Groups in Lung Adenocarcinoma</p>
+                <p><strong>Topics:</strong> Heat Shock Proteins (HSP60, HSP70, HSP90), EGFR/PI3K/AKT1 Signaling Pathway, Selenium Compounds</p>
+                
+                <div class="download-grid">
+                    <a href="manuscript_introduction.html" class="download-btn html" target="_blank">
+                        <span class="icon">🌐</span> View HTML (Print to PDF)
+                    </a>
+                    <a href="manuscript_introduction.md" class="download-btn md" download>
+                        <span class="icon">📝</span> Download Markdown
+                    </a>
+                    <a href="manuscript_introduction.txt" class="download-btn txt" target="_blank">
+                        <span class="icon">📄</span> View Text
+                    </a>
+                </div>
+            </div>
+            
+            <div class="document-section">
+                <h2>📄 Document 2: Scientific Discussion</h2>
+                <p><strong>Title:</strong> BISDA-Induced Glutathione Peroxidase Inhibition and Pro-Oxidant Cytotoxicity in A549 Lung Adenocarcinoma Cells</p>
+                <p><strong>Topics:</strong> GPx Enzyme Function, Organoselenium Compounds, ROS Modulation, Cancer Therapy Mechanisms</p>
+                
+                <div class="download-grid">
+                    <a href="scientific_discussion_GPx_BISDA.html" class="download-btn html" target="_blank">
+                        <span class="icon">🌐</span> View HTML (Print to PDF)
+                    </a>
+                    <a href="scientific_discussion_GPx_BISDA.md" class="download-btn md" download>
+                        <span class="icon">📝</span> Download Markdown
+                    </a>
+                    <a href="scientific_discussion_GPx_BISDA.txt" class="download-btn txt" target="_blank">
+                        <span class="icon">📄</span> View Text
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>💡 <strong>Tip:</strong> For best PDF quality, open HTML files and use your browser's Print function (Ctrl+P or Cmd+P) and select "Save as PDF"</p>
+            <p style="margin-top: 10px;">All documents include comprehensive references and scientific citations</p>
+        </div>
+    </div>
+</body>
+</html>
